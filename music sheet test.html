@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href = "sheet read.css"></head>
+    <body>
+        <canvas id="gamecanvas" width = "600" height = "300"></canvas>
+        <img id = "note" src= "note.png" alt = "ha"/>
+        <img id = "trebel" src = "trebel.png" alt = "u dne now" />
+        <img id = "bass" src = "bass.png" alt = "ting go"/>
+        <audio id="A2" src="A2.mp3"></audio><audio id="D2" src="D2.mp3"></audio>
+        <audio id="A3" src="A3.mp3"></audio><audio id="D3" src="D3.mp3"></audio>
+        <audio id="A4" src="A4.mp3"></audio><audio id="D4" src="D4.mp3"></audio>
+        <audio id="A5" src="A5.mp3"></audio><audio id="D5" src="D5.mp3"></audio>
+        <audio id="B3" src="B3.mp3"></audio><audio id="E2" src="E2.mp3"></audio>
+        <audio id="B4" src="B4.mp3"></audio><audio id="E3" src="E3.mp3"></audio>
+        <audio id="B5" src="B5.mp3"></audio><audio id="E5" src="E5.mp3"></audio>
+        <audio id="C2" src="C2.mp3"></audio><audio id="F2" src="F2.mp3"></audio>
+        <audio id="C3" src="C3.mp3"></audio><audio id="F3" src="F3.mp3"></audio>
+        <audio id="C4" src="C4.mp3"></audio><audio id="F4" src="F4.mp3"></audio>
+        <audio id="C5" src="C5.mp3"></audio><audio id="G2" src="G2.mp3"></audio>
+        <audio id="C6" src="C6.mp3"></audio><audio id="G3" src="G3.mp3"></audio>
+        <audio id="G4" src="G4.mp3"></audio><audio id="B2" src="B2.mp3"></audio>
+        <audio id="E4" src="E4.mp3"></audio><audio id="F5" src="F5.mp3"></audio>
+        <audio id="G5" src="G5.mp3"></audio>
+        <form align = center id = "playScreen">
+            <a href=# onclick="show(playScreen, loadScreen)"> play </a>
+        </form>
+        <form class="hide" id = "loadScreen">
+            <a href=# onclick="begin(trebel)"> trebel</a>
+            <a href=# onclick="begin(bass)"> bass</a>
+            <a href=# onclick=stall()>pause</a>
+            <a href=# onclick="end(loadScreen, playScreen)">end game</a>
+        </form>
+        <script src = "trebel.js" ></script>
+    </body>
+ </html>
